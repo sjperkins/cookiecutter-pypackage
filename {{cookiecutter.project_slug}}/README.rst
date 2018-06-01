@@ -4,20 +4,20 @@
 {% for _ in cookiecutter.project_name %}={% endfor %}
 
 {% if is_open_source %}
-.. image:: https://img.shields.io/pypi/v/{{ cookiecutter.project_slug }}.svg
-        :target: https://pypi.python.org/pypi/{{ cookiecutter.project_slug }}
+.. image:: https://img.shields.io/pypi/v/{{ cookiecutter.project_pypi }}.svg
+        :target: https://pypi.python.org/pypi/{{ cookiecutter.project_pypi }}
 
-.. image:: https://img.shields.io/travis/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}.svg
-        :target: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
+.. image:: https://img.shields.io/travis/{{ cookiecutter.github_username }}/{{ cookiecutter.project_github }}.svg
+        :target: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.project_github }}
 
-.. image:: https://readthedocs.org/projects/{{ cookiecutter.project_slug | replace("_", "-") }}/badge/?version=latest
-        :target: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/{{ cookiecutter.project_pypi | replace("_", "-") }}/badge/?version=latest
+        :target: https://{{ cookiecutter.project_pypi | replace("_", "-") }}.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 {%- endif %}
 
 {% if cookiecutter.add_pyup_badge == 'y' %}
-.. image:: https://pyup.io/repos/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/shield.svg
-     :target: https://pyup.io/repos/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/
+.. image:: https://pyup.io/repos/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_github }}/shield.svg
+     :target: https://pyup.io/repos/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_github }}/
      :alt: Updates
 {% endif %}
 
@@ -26,7 +26,7 @@
 
 {% if is_open_source %}
 * Free software: {{ cookiecutter.open_source_license }}
-* Documentation: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io.
+* Documentation: https://{{ cookiecutter.project_pypi | replace("_", "-") }}.readthedocs.io.
 {% endif %}
 
 Features
