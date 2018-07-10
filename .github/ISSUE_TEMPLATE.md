@@ -1,14 +1,15 @@
-* Date you used Cookiecutter PyPackage:
-* Cookiecutter version used, if any:
-* Python version, if any:
-* Operating System:
+Thank you for reporting an issue.
 
-### Description
+Please read the following guidelines to ensure that your issue is handled
+properly.
 
-Describe what you were trying to get done. Tell us what happened, what went wrong, and what you expected to happen.
+1.  If you have found a bug, then please include a
+    self-contained copy-pastable example that generates the issue if possible.
+2.  Please also include an exception and full traceback of the error if
+    available.
+3.  Please include the versions of Python, and other relevant libraries
+    if they are applicable.
 
-### What I Did
+Thank you again for your efforts.
 
-```
-Paste the command(s) you ran and the output.
-```
+* [Minimal bug reports](http://matthewrocklin.com/blog/work/2018/02/28/minimal-bug-reports)
